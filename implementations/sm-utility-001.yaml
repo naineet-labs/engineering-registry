@@ -1,0 +1,55 @@
+id: SM-UTILITY-001
+
+project_id: SM-UTILITY
+infrastructure_id: INF-SMART-METER
+
+name: Smart Meter Utility Implementation 001
+
+owner:
+  type: fellowship_coordinator
+  id: NT-004
+
+repository:
+  name: smart-meter-utility-001
+  url: https://github.com/naineet-labs/smart-meter-utility-001
+
+architecture:
+  style: client-server
+
+status: development
+
+components:
+
+  - id: CMP-SM-UTILITY-001-FE
+    name: Utility Frontend
+    type: frontend
+
+    path: /frontend
+
+    technology:
+      language: JavaScript
+      framework: React
+
+    capabilities:
+      - web-ui
+
+    status: development
+
+
+  - id: CMP-SM-UTILITY-001-BE
+    name: Utility Backend
+    type: api-service
+
+    path: /backend
+
+    technology:
+      language: Java
+      framework: Spring Boot
+
+    capabilities:
+      - rest-api
+      - authentication
+      - business-logic
+      - data-access
+
+    status: development

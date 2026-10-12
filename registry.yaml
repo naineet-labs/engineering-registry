@@ -1,0 +1,65 @@
+registry:
+  id: ENGINEERING-REGISTRY
+  name: Naineet Cloud Engineering Registry
+  version: 1.0.0
+
+infrastructures:
+  - id: INF-SMART-METER
+    file: infrastructures/smart-meter.yaml
+
+projects:
+  - id: SM-UTILITY
+    file: projects/smart-meter-utility.yaml
+
+  - id: SM-SOCIETY
+    file: projects/smart-meter-society.yaml
+
+implementations:
+  - id: SM-UTILITY-001
+    file: implementations/sm-utility-001.yaml
+
+developers:
+  naineet_fellows:
+    type: fellow
+    path: developers/naineet-fellows
+    members:
+      - id: NT-001
+        file: nf-001.yaml
+
+      - id: NT-002
+        file: nf-002.yaml
+
+  fellowship_tech_leads:
+    path: developers/fellowship-tech-leads
+    type: fellowship_tech_lead
+    members:
+      - id: NT-003
+        file: ftl-001.yaml
+
+  fellowship_coordinators:
+    path: developers/fellowship-coordinators
+    type: fellowship_coordinator
+    members:
+      - id: NT-004
+        file: fc-001.yaml
+
+  other_developers:
+    path: developers/other-developers
+    type: developer
+    members:
+      - id: NT-005
+        file: dev-001.yaml
+
+teams:
+  - id: TEAM-001
+    file: teams/team-001.yaml
+
+technologies:
+  - id: TECH-REACT
+    file: technologies/react.yaml
+
+  - id: TECH-SPRING-BOOT
+    file: technologies/spring-boot.yaml
+
+  - id: TECH-PYTHON
+    file: technologies/python.yaml

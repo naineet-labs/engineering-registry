@@ -1,0 +1,27 @@
+id: NT-001
+name: Example Developer
+
+role:
+  type: fellow
+  program: naineet_software_engineering_fellowship
+
+status: active
+
+team:
+  team_id: null
+  tech_lead_id: FTL-001
+  coordinator_id: FC-001
+
+skills:
+  primary:
+    - Java
+    - Spring Boot
+  secondary:
+    - SQL
+    - React
+
+github:
+  username: null
+  profile_url: null
+
+joined_on: null

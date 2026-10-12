@@ -1,0 +1,15 @@
+id: SM-UTILITY
+
+name: Smart Meter(IOT) Utility
+
+infrastructure_id: INF-SMART-METER
+
+description: >
+  Utility software for interacting with and managing simulated smart meters.
+
+status: active
+
+category: utility
+
+implementations:
+  - SM-UTILITY-001
